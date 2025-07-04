@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".AboutActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold">
+
+    </TextView>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:alpha="0.5"
+        android:background="@color/black" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="
+
+VisitorFunds is dedicated to revolutionizing the way teachers manage their lecture activities and billing processes. Our client application offers an intuitive and efficient platform for teachers to track their lecture activities, while our HOD (Head of Department)
+application ensures seamless verification and management of these activities.\n\n
+
+Key Features:\n\n
+
+Lecture Activity Tracking:\n
+
+Our calendar format allows teachers to easily input lecture details such as subject, class, lecture type, time, content, number of students, and date.
+All lecture activities are sent to the HOD application for verification, ensuring transparency and accountability.\n\n
+Pending Lecture Management:\n
+
+The client application displays all pending lecture activities below the calendar format, enabling teachers to have a clear overview of tasks awaiting verification.
+Teachers can track the status of each lecture activity, including the number of approved, rejected, and pending lectures.\n\n"
+            android:textColor="@color/black"
+            android:textSize="18dp">
+
+        </TextView>
+    </ScrollView>
+
+</LinearLayout>

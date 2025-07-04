@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+<!--        <item-->
+<!--            android:id="@+id/nav_home"-->
+<!--            android:icon="@drawable/baseline_home_24"-->
+<!--            android:title="Home"/>-->
+
+        <item
+            android:id="@+id/nav_add_visitor"
+            android:icon="@drawable/baseline_person_add_24"
+            android:title="Add Visitor"/>
+
+        <item
+            android:id="@+id/nav_show_visitor"
+            android:icon="@drawable/baseline_supervisor_account_24"
+            android:title="Show Visitor"/>
+
+        <item
+            android:id="@+id/nav_event"
+            android:icon="@drawable/baseline_event_note_24"
+            android:title="Pending Activity"/>
+
+        <item
+            android:id="@+id/nav_salary"
+            android:icon="@drawable/baseline_point_of_sale_24"
+            android:title="Salary"/>
+
+
+    </group>
+
+
+    <item
+        android:title="Upload Timetable">
+        <menu>
+            <item
+                android:id="@+id/nav_upload"
+                android:icon="@drawable/baseline_upload_file_24"
+                android:title="Upload"/>
+        </menu>
+
+
+    </item>
+</menu>

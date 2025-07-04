@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/reCard"
+    android:layout_margin="16dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp">
+
+        <TextView
+            android:id="@+id/subject2"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="12dp"
+            android:text="Subject "
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/typePRTH"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/subject2"
+            android:text="Type"
+            android:textColor="@color/black"
+            android:textSize="15sp">
+
+        </TextView>
+
+
+        <!--        <TextView-->
+        <!--            android:layout_width="80dp"-->
+        <!--            android:layout_height="30dp"-->
+        <!--            android:id="@+id/recPriority"-->
+        <!--            android:text="priority"-->
+        <!--            android:layout_toEndOf="@id/recTitle"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:layout_marginStart="90dp"-->
+        <!--            android:textAlignment="center"-->
+        <!--            android:textColor="@color/lavender"-->
+        <!--            android:textSize="16sp"/>-->
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation"
+            android:layout_width="84dp"
+            android:layout_height="78dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/subject2"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/vis_timer">
+
+        </com.airbnb.lottie.LottieAnimationView>
+
+        <TextView
+            android:id="@+id/class2"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subject2"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="12dp"
+            android:maxLines="1"
+            android:text="Class"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/No_Student"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subject2"
+            android:layout_toRightOf="@+id/class2"
+            android:text=" Student"
+            android:textColor="@color/black">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/date2"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/class2"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="12dp"
+            android:maxLines="1"
+            android:text="Date"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/time2"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date2"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="12dp"
+            android:maxLines="1"
+            android:text="Time"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/content2"
+            android:layout_width="335dp"
+            android:layout_height="44dp"
+            android:layout_below="@+id/time2"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="start"
+            android:paddingTop="3dp"
+            android:text="Contents"
+            android:textColor="@color/black">
+
+        </TextView>
+
+
+        <Button
+            android:id="@+id/pending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/class2"
+            android:layout_marginStart="250dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/pending_border"
+            android:text="Pending" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

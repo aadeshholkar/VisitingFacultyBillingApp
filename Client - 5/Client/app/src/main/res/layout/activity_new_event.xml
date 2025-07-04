@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/light_blue"
+    android:orientation="vertical"
+    tools:context=".CalenderOperation.NewEventActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="30dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="Calender's Event"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/reCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/lavender"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="8dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="675dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/date1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Date"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText" />
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation"
+                android:layout_width="206dp"
+                android:layout_height="127dp"
+                android:layout_gravity="center"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/vis_calender">
+
+            </com.airbnb.lottie.LottieAnimationView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lavender_border2">
+
+                <Spinner
+                    android:id="@+id/time1"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:hint="time"
+                    android:minHeight="50dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lavender_border2">
+
+                <Spinner
+                    android:id="@+id/Subject"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:entries="@array/subject"
+                    android:hint="subject"
+                    android:minHeight="50dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    tools:ignore="ContentDescription,DuplicateSpeakableTextCheck" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lavender_border2">
+
+                <Spinner
+                    android:id="@+id/Class"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:minHeight="50dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/lavender_border2">
+
+                    <Spinner
+                        android:id="@+id/TH_PR_type"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/app_name"
+                        android:hint="Type"
+                        android:minHeight="50dp"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <EditText
+                        android:id="@+id/No_Student"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="No.of Student"
+                        android:background="@drawable/lavender_border2"
+                        android:paddingStart="10dp"
+                        android:inputType="number"
+                        android:minHeight="50dp"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <EditText
+                android:id="@+id/Contents"
+                android:layout_width="300dp"
+                android:layout_marginTop="20dp"
+                android:paddingStart="10dp"
+                android:layout_gravity="center"
+                android:hint="Contents Covered"
+                android:inputType="textMultiLine"
+                android:background="@drawable/lavender_border"
+                android:layout_height="50dp">
+
+            </EditText>
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="200dp"
+                android:layout_height="62dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+
+                android:gravity="center"
+                android:text="save"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:cornerRadius="30dp" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+       <item android:id="@+id/nav_calender"
+    android:icon="@drawable/baseline_calendar_month_24"
+    android:title="Calender"/>
+
+        <item android:id="@+id/nav_upload"
+            android:icon="@drawable/baseline_upload_file_24"
+            android:title="Upload"/>
+
+        <item android:id="@+id/nav_activity"
+            android:icon="@drawable/baseline_bookmark_24"
+            android:title="Activity"/>
+    </group>
+
+    <group>
+    <item
+         android:title="Options">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/baseline_info_24"
+                android:title="Profile"/>
+            <item android:id="@+id/nav_about"
+                android:icon="@drawable/baseline_home_24"
+                android:title="About us">
+
+            </item>
+            <item
+                android:id="@+id/nav_logut"
+                android:icon="@drawable/baseline_exit_to_app_24"
+                android:title="Logut"/>
+
+        </menu>
+
+
+    </item>
+    </group>
+</menu>
